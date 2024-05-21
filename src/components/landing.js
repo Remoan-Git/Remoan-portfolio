@@ -1,14 +1,27 @@
 import React from "react";
-
-const Landing = () => {
+import Image from "next/image";
+const Landing = ({ meDirect }) => {
   return (
     <div>
       <div className="bg-shadow-2" />
       <div className="bg-shadow-3" />
-      <div className="landing-title text-7xl scale-up-center">
-        I Am Web Devloper
-        <br />
-        <span className="font-jura text-4xl">
+      <div className="landing-title text-4xl scale-up-center flex flex-col items-center">
+        <Image src={"/images/profile.webp"} width={150} height={150} />
+        <div>
+          I Am <span className="text-[#DA8BFF]">Remoan Toumani</span>
+        </div>{" "}
+        a Front-end Web
+        <div> Developer</div>
+        <span className="font-jura text-4xl why">
+          But{" "}
+          <span
+            className="text-[#DA8BFF] underline cursor-pointer"
+            onClick={() => meDirect()}
+          >
+            why?
+          </span>
+        </span>
+        <span className="font-jura text-4xl why-mob">
           But <span className="text-[#DA8BFF]">why?</span>
         </span>
       </div>

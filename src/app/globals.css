@@ -4,7 +4,12 @@
 
 :root {
   background-color: #010101;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden !important;
+}
+
+img{
+  pointer-events: none;
 }
 
 @font-face {
@@ -20,7 +25,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
+.why-mob{
+  display: none;
+}
 .font-jura {
   font-family: "Jura";
 }
@@ -86,18 +93,19 @@
 } */
 
 .landing-title {
-  width: 368px;
+  width: 450px;
   height: 376px;
   position: absolute;
-  left: 12%;
-  top: 20%;
+  left: 9%;
+  top: 15%;
   transform: translateY(-20%);
   gap: 0px;
   opacity: 0px;
+  text-align: center !important;
 
   font-family: "JetBrains-mono";
   font-weight: 400;
-  line-height: 120px;
+  line-height: 80px;
   text-align: left;
 
   color: #ffffff;
@@ -128,6 +136,15 @@
   z-index: 9999;
 }
 
+.section-title {
+  color: white;
+  font-size: 2.5rem;
+  position: relative;
+  bottom: 80px;
+  font-family: "JetBrains-mono";
+  display: none;
+}
+
 .separator-ball-1 {
   position: absolute;
   border-radius: 100%;
@@ -145,7 +162,7 @@
   top: 95%;
   transform: translateY(-95%);
   z-index: 9999999999;
-  left: 80%;
+  left: 85%;
 }
 
 .main-menu {
@@ -199,6 +216,22 @@
 
 .exp-option {
   width: 252px;
+  height: 130px;
+  font-family: Jura;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid #ffffff33;
+  color: #ffffff;
+  border-right: 1px solid #ffffff33;
+}
+
+.projects-option {
+  width: 377px;
   height: 130px;
   font-family: Jura;
   font-size: 40px;
@@ -330,11 +363,10 @@ body {
   height: 350px;
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
   flex-wrap: wrap;
   position: fixed;
   font-family: "Jura";
-  top: 25%;
+  top: 20%;
   left: 10%;
   transform: translate(-25%, -10%);
 }
@@ -381,17 +413,18 @@ body {
   width: 400px;
   height: 60px;
   border: 1px solid #ffffff33;
+  justify-content: space-evenly;
 
   display: flex;
   flex-wrap: nowrap;
-  position: fixed;
+  position: relative;
   font-family: "Jura";
-  top: 85%;
-  transform: translate(-87%);
+  top: 88%;
+  left: 5%;
 }
 
 .contact-social-item {
-  width: 100px;
+  width: 25%;
   height: 60px;
   text-align: center;
   align-items: center;
@@ -402,4 +435,203 @@ body {
   border-right: 1px solid #ffffff33;
 }
 
+.contact-section {
+  width: 40vw;
+  height: 80vh;
+  left: 8%;
+  top: 15%;
+  position: absolute;
+}
 
+.almasri-background {
+  background-image: url("../app/assets/images/almasri.webp") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ecommerce-background {
+  background-image: url("../app/assets/images/ecommerce.webp") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    overflow-y: visible !important;
+  }
+
+  .bg-shadow-4 {
+    display: none;
+  }
+
+  .section-title {
+    display: block;
+  }
+  .main-menu {
+    display: none;
+  }
+  .vertical-separator {
+    display: none;
+  }
+  .about-me-container {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 1.25rem;
+    line-height: 2.2rem;
+  }
+  .min-h-screen {
+    padding: 2rem;
+    padding-top: 3rem !important;
+    margin: 2rem;
+  }
+  .separator-ball-1 {
+    display: none;
+  }
+  .separator-ball-2 {
+    display: none;
+  }
+  .separator-ball-3 {
+    display: none;
+  }
+
+  .js-icon {
+    width: 100px;
+    position: fixed;
+    left: -30px;
+    top: -20px;
+  }
+
+  .landing-pyramid {
+    display: none;
+  }
+  .landing-title {
+    position: static;
+  }
+
+  .next {
+    left: 85%;
+    top: 105vh;
+    width: 50px;
+  }
+  .tailwind {
+    left: 5%;
+    top: 235vh;
+    width: 50px;
+  }
+
+  .css {
+    left: 88%;
+    top: 320vh;
+    width: 30px;
+  }
+
+  .react {
+    top: 450vh;
+    left: 80vw;
+  }
+
+  .html {
+    top: 420vh;
+  }
+  .redux {
+    top: 580vh;
+  }
+  .skills-mob {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    line-height: 4rem !important;
+    flex-direction: column;
+    gap: 0.2rem;
+    height: 100%;
+  }
+
+  .projects-mob {
+    width: 80vw;
+  }
+
+  .contact-section {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    position: static;
+  }
+  .contact-form {
+    width: 100%;
+    position: static !important;
+  }
+
+  .social-info-container {
+    width: 100% !important;
+    position: static !important;
+  }
+  .contact-form button {
+    left: 56%;
+  }
+  .why-mob{
+    display: block;
+  }
+  .why{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me-container {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .btn2 {
+    padding: 2px 2px !important;
+    font-size: 1rem !important;
+  }
+  .btn2 svg {
+    width: 25px;
+  }
+  .dwn-btn-container {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .min-h-screen {
+    padding: 1rem;
+    margin: 1.5rem;
+  }
+  .about-me-container {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .dwn-btn-container {
+    margin-top: 0.5rem;
+  }
+  .landing-title {
+    font-size: 1.5rem !important;
+    width: 100% !important;
+  }
+  .landing-title span {
+    font-size: 1.5rem !important;
+  }
+  .contact-form button {
+    width: 42% !important;
+    left: 57.5%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .btn2 {
+    font-size: 0.8rem !important;
+  }
+  .btn2 svg {
+    width: 20px !important;
+  }
+}

@@ -63,79 +63,82 @@ export default function Contact() {
   };
 
   return (
-    <>
-      <div className="bg-shadow-4" />
+    <div>
       <div className="separator-ball-1" />
       <div className="separator-ball-2 slide-top" />
       <div className="separator-ball-3 slide-top" />
-      <form
-        className="contact-form flex scale-up-center"
-        onSubmit={handleSubmit}
-      >
-        <input
-          className="contact-name-input"
-          placeholder="Name"
-          type="text"
-          id="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-        <input
-          className="contact-email-input flex"
-          placeholder="Email"
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-
-        <textarea
-          className="contact-message-input"
-          placeholder="Message"
-          id="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        />
-
-        <button
-          disabled={sendStatus != 0}
-          className="contact-form-btn"
-          type="submit"
+      <span className="section-title"> Contact Me</span>
+      <div className="contact-section">
+        <div className="bg-shadow-4" />
+        <form
+          className="contact-form flex scale-up-center"
+          onSubmit={handleSubmit}
         >
-          {sendStatus === 0
-            ? "Send"
-            : sendStatus === 1
-            ? "Sending..."
-            : sendStatus === 2
-            ? "Sent ✓"
-            : "Try Again!"}
-        </button>
-      </form>
-      <div className="social-info-container">
-        <div className="contact-social-item">
-          <Link href={socialLinks.linkedin} target="_blank">
-            <Image src="/icons/LinkedIn.svg" width="35" height="35" />
-          </Link>
-        </div>
-        <div className="contact-social-item">
-          <Link href={`mailto:${socialLinks.email}`} target="_blank">
-            <Image src="/icons/mail.svg" width="35" height="35" />
-          </Link>
-        </div>
-        <div className="contact-social-item">
-          <Link href={socialLinks.instagram} target="_blank">
-            <Image src="/icons/instagram.svg" width="35" height="35" />
-          </Link>
-        </div>
-        <div className="contact-social-item">
-          <Link href={socialLinks.github} target="_blank">
-            <Image src="/icons/github.svg" width="35" height="35" />
-          </Link>
+          <input
+            className="contact-name-input"
+            placeholder="Name"
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+          <input
+            className="contact-email-input flex"
+            placeholder="Email"
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+
+          <textarea
+            className="contact-message-input"
+            placeholder="Message"
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          />
+
+          <button
+            disabled={sendStatus != 0}
+            className="contact-form-btn"
+            type="submit"
+          >
+            {sendStatus === 0
+              ? "Send"
+              : sendStatus === 1
+              ? "Sending..."
+              : sendStatus === 2
+              ? "Sent ✓"
+              : "Try Again!"}
+          </button>
+        </form>
+        <div className="social-info-container">
+          <div className="contact-social-item">
+            <Link href={socialLinks.linkedin} target="_blank">
+              <Image src="/icons/LinkedIn.svg" width="35" height="35" />
+            </Link>
+          </div>
+          <div className="contact-social-item">
+            <Link href={`mailto:${socialLinks.email}`} target="_blank">
+              <Image src="/icons/mail.svg" width="35" height="35" />
+            </Link>
+          </div>
+          <div className="contact-social-item">
+            <Link href={socialLinks.instagram} target="_blank">
+              <Image src="/icons/instagram.svg" width="35" height="35" />
+            </Link>
+          </div>
+          <div className="contact-social-item">
+            <Link href={socialLinks.github} target="_blank">
+              <Image src="/icons/github.svg" width="35" height="35" />
+            </Link>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -1,25 +1,30 @@
 import React from "react";
+import PdfDownloader from "./pdfDownload";
 
 const Me = () => {
   return (
     <div>
       <div className="bg-shadow-4" />
       <div className="about-me-container text-xl scale-up-center font-jura p-2">
+        <div className="mr-4 mt-2 absolute right-0 dwn-btn-container">
+          <PdfDownloader />
+        </div>
+
         <p>
           Hi,
-          <br /> I am Remoan Toumani
-          <br /> <br />a front-end developer hailing from Syria. My journey into
-          the world of web development was sparked by a fascination with the
-          internet's inner workings. Over time, I've become proficient in HTML,
-          CSS, and JavaScript, constantly refining my skills to stay ahead in
-          the ever-evolving landscape of front-end development.
+          <br /> I am <b className="text-[#DA8BFF] underline">Remoan Toumani</b>
+          <br /> <br />a software engineer and front-end developer from Syria.
+          With a diploma in Software Engineering from Damascus University, I've
+          honed my skills in front-end development, specializing in crafting
+          intuitive user interfaces.
           <br />
-          <br />
-          Beyond coding, I enjoy exploring new design concepts, experimenting
-          with different frameworks, and contributing to open-source projects. I
-          believe in the power of collaboration and continuous learning, and I'm
-          always eager to push the boundaries of what's possible in web
-          development.
+          {/* <br /> */}
+          Throughout my career, I've contributed to diverse projects, leveraging
+          my expertise to create visually captivating and functional designs.
+          Continuous learning is key to staying relevant, and I've pursued
+          courses in React, Agile methodologies, and Odoo development to expand
+          my knowledge base. Driven by a passion for innovation, I'm committed
+          to leveraging technology to create impactful user experiences.
         </p>
       </div>
     </div>

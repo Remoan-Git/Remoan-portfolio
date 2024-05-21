@@ -10,9 +10,11 @@ const Skills = () => {
   return (
     <div>
       <div className="bg-shadow-4" />
-      <div className="about-me-container text-xl scale-up-center font-jura leading-[80px] floating">
+      <span className="section-title">Skills</span>
+      <div className="about-me-container text-xl scale-up-center font-jura leading-[80px] floating skills-mob">
         {skillsList.map((skill, index) => (
           <span
+            key={index}
             className={`mr-8 text-sm  ${
               !isOdd(index)
                 ? "relative top-[20px] right-[10px] text-[#FFFFFF80]"
