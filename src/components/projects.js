@@ -18,18 +18,21 @@ const Projects = () => {
         width={40}
         height={40}
         src={"/images/react.svg"}
+        alt="react icon"
       />
       <Image
         className="floating absolute right-[85%] top-[18%] html"
         width={40}
         height={40}
         src={"/images/html.svg"}
+        alt="html icon"
       />
       <Image
         className="floating absolute right-[85%] top-[75%] redux"
         width={40}
         height={40}
         src={"/images/redux.svg"}
+        alt="redux icon"
       />
 
       <div className="bg-shadow-4" />

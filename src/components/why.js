@@ -9,18 +9,21 @@ const Why = () => {
         width={70}
         height={70}
         src={"/images/next.png"}
+        alt="next.js icon"
       />
       <Image
         className="floating absolute right-[72%] top-[6%] css "
         width={40}
         height={40}
         src={"/images/css.svg"}
+        alt="css icon"
       />
       <Image
         className="floating absolute right-[85%] top-[80%] tailwind "
         width={40}
         height={40}
         src={"/images/tailwind.svg"}
+        alt="tailwind icon"
       />
       <div className="bg-shadow-4" />
       <div className="about-me-container text-xl scale-up-center font-jura p-2">

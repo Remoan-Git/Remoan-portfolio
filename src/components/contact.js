@@ -119,22 +119,22 @@ export default function Contact() {
         <div className="social-info-container">
           <div className="contact-social-item">
             <Link href={socialLinks.linkedin} target="_blank">
-              <Image src="/icons/LinkedIn.svg" width="35" height="35" />
+              <Image src="/icons/LinkedIn.svg" width="35" height="35" alt="linkedin icon"/>
             </Link>
           </div>
           <div className="contact-social-item">
             <Link href={`mailto:${socialLinks.email}`} target="_blank">
-              <Image src="/icons/mail.svg" width="35" height="35" />
+              <Image src="/icons/mail.svg" width="35" height="35" alt="mail icon"/>
             </Link>
           </div>
           <div className="contact-social-item">
             <Link href={socialLinks.instagram} target="_blank">
-              <Image src="/icons/instagram.svg" width="35" height="35" />
+              <Image src="/icons/instagram.svg" width="35" height="35" alt="instagram icon"/>
             </Link>
           </div>
           <div className="contact-social-item">
             <Link href={socialLinks.github} target="_blank">
-              <Image src="/icons/github.svg" width="35" height="35" />
+              <Image src="/icons/github.svg" width="35" height="35" alt="github icon"/>
             </Link>
           </div>
         </div>

@@ -27,6 +27,7 @@ export default function Home() {
           width={180}
           height={180}
           src={"/images/js.svg"}
+          alt="js icon"
         />
       </div>
       {windowWidth && windowWidth > 800 && (

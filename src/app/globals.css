@@ -8,7 +8,7 @@
   overflow-y: hidden !important;
 }
 
-img{
+img {
   pointer-events: none;
 }
 
@@ -25,7 +25,7 @@ img{
   font-weight: normal;
   font-style: normal;
 }
-.why-mob{
+.why-mob {
   display: none;
 }
 .font-jura {
@@ -40,7 +40,6 @@ img{
   left: 80%;
   top: -4%;
 
-  opacity: 0px;
   overflow: hidden;
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -57,7 +56,6 @@ img{
   top: 40%;
   transform: translate(-50%, -50%);
   gap: 0px;
-  opacity: 0px;
   overflow: hidden;
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -75,7 +73,6 @@ img{
   left: 2%;
   top: 15%;
   gap: 0px;
-  opacity: 0px;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgba(255, 255, 255, 0.1) 0%,
@@ -100,7 +97,6 @@ img{
   top: 15%;
   transform: translateY(-20%);
   gap: 0px;
-  opacity: 0px;
   text-align: center !important;
 
   font-family: "JetBrains-mono";
@@ -200,7 +196,6 @@ img{
   top: 199px;
   left: 978px;
   gap: 0px;
-  opacity: 0px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -348,7 +343,6 @@ body {
   left: 25%;
   transform: translate(-50%, -50%);
   gap: 0px;
-  opacity: 0px;
   overflow: hidden;
   background: radial-gradient(
     50% 50% at 50% 50%,
@@ -377,7 +371,6 @@ body {
   gap: 0px;
   border-radius: 50px 0px 50px 0px;
   border: 2px solid #ad00ff;
-  opacity: 0px;
   background: #eec3ff;
   color: #010101;
   position: fixed;
@@ -577,10 +570,10 @@ body {
   .contact-form button {
     left: 56%;
   }
-  .why-mob{
+  .why-mob {
     display: block;
   }
-  .why{
+  .why {
     display: none;
   }
 }
@@ -603,6 +596,9 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+  .company-icon {
+    margin-bottom: 30px;
+  }
   .min-h-screen {
     padding: 1rem;
     margin: 1.5rem;

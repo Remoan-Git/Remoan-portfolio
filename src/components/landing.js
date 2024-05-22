@@ -6,7 +6,7 @@ const Landing = ({ meDirect }) => {
       <div className="bg-shadow-2" />
       <div className="bg-shadow-3" />
       <div className="landing-title text-4xl scale-up-center flex flex-col items-center">
-        <Image src={"/images/profile.webp"} width={150} height={150} />
+        <Image src={"/images/profile.webp"} width={150} height={150} alt="profile pic" />
         <div>
           I Am <span className="text-[#DA8BFF]">Remoan Toumani</span>
         </div>{" "}

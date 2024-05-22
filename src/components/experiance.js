@@ -16,20 +16,26 @@ const Exp = () => {
       <span className="section-title"> Experiance</span>
       <div className="about-me-container text-xl scale-up-center font-jura p-2 projects-mob">
         {activeSlide == 1 && (
-          <Image
-            className="logo rounded-full"
-            src={"/logos/astudio.jpg"}
-            width={80}
-            height={80}
-          />
+          <div className="company-icon">
+            <Image
+              className="logo rounded-full"
+              src={"/logos/astudio.jpg"}
+              width={80}
+              height={80}
+              alt="Astudio icon"
+            />
+          </div>
         )}
         {activeSlide == 2 && (
-          <Image
-            className="logo rounded-full"
-            src={"/logos/itos.png"}
-            width={155}
-            height={40}
-          />
+          <div className="company-icon">
+            <Image
+              className="logo rounded-full"
+              src={"/logos/itos.png"}
+              width={155}
+              height={40}
+              alt="itos icon"
+            />
+          </div>
         )}
         <div className="container">
           <div className="slideshow">
