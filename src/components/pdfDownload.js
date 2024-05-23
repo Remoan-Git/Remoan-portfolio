@@ -1,5 +1,6 @@
 import React from "react";
 import "@/styles/buttons.css";
+import { useTheme } from "next-themes";
 
 const PdfDownloader = () => {
   const handleDownload = () => {
@@ -12,13 +13,15 @@ const PdfDownloader = () => {
     document.body.removeChild(link);
   };
 
+  const {theme} = useTheme();
+
   return (
     <div>
       <button onClick={handleDownload} className="btn2">
         <span className="flex">
           {" "}
           <svg
-            fill="#ffffff"
+            fill={theme == 'light' ? "#0c0c0c" : "#ffffff"}
             width="30px"
             height="30px"
             viewBox="0 0 1024 1024"

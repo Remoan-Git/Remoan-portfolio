@@ -43,10 +43,10 @@ aside,
 } */
 
 .slideshow a:after {
-  border-color: #fff #fff transparent transparent;
+  border-color: var(--text-color) var(--text-color) transparent transparent;
   border-style: solid;
   border-width: 2px;
-  color: #fff;
+  color: var(--text-color);
   display: block;
   height: 10px;
   position: absolute;

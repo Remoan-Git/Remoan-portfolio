@@ -64,7 +64,7 @@ const Projects = () => {
                           Owned By ASTUDIO - UAE
                         </p>
                       </div>
-                      <small className=" text-xs">Click Me !</small>
+                      <small className="text-xs text-[#ffffff]">Click Me !</small>
                     </div>
                     <div className="card__content">
                       <p className="card__sub__title">BaguetteApp CRM</p>
@@ -96,7 +96,7 @@ const Projects = () => {
                       <p className="card__title font-white">
                         Al-Masri Ops Management System
                       </p>
-                      <small className=" text-xs">Click Me !</small>
+                      <small className=" text-xs text-[#ffffff]">Click Me !</small>
                     </div>
 
                     <div className="card__content">
@@ -139,7 +139,7 @@ const Projects = () => {
                       <p className="card__title font-white">
                         Mini E-commerce App
                       </p>
-                      <small className=" text-xs">Click Me !</small>
+                      <small className=" text-xs text-[#ffffff]">Click Me !</small>
                     </div>
                     <div className="card__content">
                       <Link
@@ -178,7 +178,7 @@ const Projects = () => {
                   <div className="project-card flex flex-col">
                     <div className="flex flex-col gap-8">
                       <p className="card__title font-white">Befit Gym websit</p>
-                      <small className=" text-xs">Click Me !</small>
+                      <small className=" text-xs text-[#ffffff]">Click Me !</small>
                     </div>
                     <div className="card__content">
                       <Link

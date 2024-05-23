@@ -17,7 +17,7 @@ const Skills = () => {
             key={index}
             className={`mr-8 text-sm  ${
               !isOdd(index)
-                ? "relative top-[20px] right-[10px] text-[#FFFFFF80]"
+                ? "relative top-[20px] right-[10px] even-skill"
                 : ""
             } ${isOdd(index) ? "relative bottom-[20px] left-[20px]" : ""} `}
           >
