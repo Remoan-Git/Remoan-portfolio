@@ -6,14 +6,18 @@ import { useEffect, useState } from "react";
 const ThemeChanger = () => {
   const { theme, setTheme } = useTheme();
   const [isChecked, setIsChecked] = useState(true);
-  const [isLoaded, setIsLoaded] = useState(false); // New loading state
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     if (theme) {
-      setIsChecked(theme === "light");
-      setIsLoaded(true); // Set loading state to true once theme is loaded
+      if (theme !== "light" && theme !== "dark") {
+        setTheme("light");
+      } else {
+        setIsChecked(theme === "light");
+      }
+      setIsLoaded(true);
     }
-  }, [theme]);
+  }, [theme, setTheme]);
 
   const handleCheckboxChange = () => {
     const newTheme = isChecked ? "dark" : "light";
@@ -21,11 +25,9 @@ const ThemeChanger = () => {
     setIsChecked(!isChecked);
   };
 
-  // Render nothing or a loader until the theme is loaded
   if (!isLoaded) {
     return null;
   }
-
   return (
     <div className="theme-switch">
       <label className="switch" htmlFor="switch">
