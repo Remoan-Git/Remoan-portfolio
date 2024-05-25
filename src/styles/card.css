@@ -116,7 +116,7 @@ aside,
 }
 
 .pagination a {
-  background: rgba(255, 255, 255, 0.75);
+  background: var(--text-color);
   border-radius: 50%;
   display: block;
   height: 10px;
@@ -249,6 +249,15 @@ a:target {
 }
 
 @media only screen and (max-width: 550px) {
+
+ .card__description{
+  font-size: 0.7rem!important;
+ } 
+
+ .card__sub__title{
+  font-size: large !important;
+ }
+
   .project-card {
     width: 100% !important;
   }

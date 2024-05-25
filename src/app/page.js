@@ -12,6 +12,8 @@ import Image from "next/image";
 import useWindowWidth from "./utils/useWindowWidth";
 import ThemeChanger from "./utils/themeChanger";
 import { useTheme } from "next-themes";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
   const windowWidth = useWindowWidth();

@@ -34,8 +34,23 @@
   --skill-color: #ffffff33;
 }
 
-.even-skill{
+.even-skill {
   color: var(--skill-color);
+}
+
+.slick-next:before {
+  color: var(--text-color) !important;
+}
+.slick-prev:before {
+  color: var(--text-color) !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--contact-border-color) !important;
+}
+
+.slick-dots li button:before {
+  color: var(--text-color) !important;
 }
 
 .theme-switch {
@@ -119,7 +134,6 @@ img {
     var(--gradient-end) 100%
   );
 }
-
 
 .landing-title {
   width: 450px;
@@ -476,13 +490,27 @@ body {
 
 .almasri-background {
   background-image: url("../app/assets/images/almasri.webp") !important;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .ecommerce-background {
   background-image: url("../app/assets/images/ecommerce.webp") !important;
-  background-size: cover;
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.befit-background {
+  background-image: url("../app/assets/images/befit.webp") !important;
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.moziak-background {
+  background-image: url("../app/assets/images/moziak.webp") !important;
+
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -553,13 +581,13 @@ body {
   }
   .tailwind {
     left: 5%;
-    top: 235vh;
+    top: 236vh;
     width: 50px;
   }
 
   .css {
-    left: 88%;
-    top: 320vh;
+    left: 88.5%;
+    top: 322vh;
     width: 30px;
   }
 
@@ -570,10 +598,10 @@ body {
 
   .html {
     width: 30px;
-    top: 420vh;
+    top: 440vh;
   }
   .redux {
-    top: 580vh;
+    top: 578vh;
   }
   .skills-mob {
     display: flex;
@@ -669,4 +697,8 @@ body {
   .btn2 svg {
     width: 20px !important;
   }
+}
+
+.inline-flex-important {
+  display: inline-flex !important;
 }
