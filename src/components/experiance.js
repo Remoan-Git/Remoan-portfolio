@@ -29,6 +29,7 @@ const Exp = () => {
                   width={experience.iconWidth}
                   height={experience.iconHeight}
                   alt={experience.iconAlt}
+                  priority={true}
                 />
               </div>
               <b className="underline">{experience.title}</b>
