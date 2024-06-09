@@ -38,13 +38,26 @@ export default function Home() {
       </div>
       {windowWidth && windowWidth > 800 ? (
         <>
-          {page === "landing" && <Landing meDirect={setPageMe} />}
-          {page === "contact" && <Contact />}
-          {page === "me" && <Me />}
-          {page === "skills" && <Skills />}
-          {page === "exp" && <Exp />}
-          {page === "projects" && <Projects />}
-          {page === "why" && <Why />}
+          {(() => {
+            switch (page) {
+              case "landing":
+                return <Landing meDirect={setPageMe} />;
+              case "contact":
+                return <Contact />;
+              case "me":
+                return <Me />;
+              case "skills":
+                return <Skills />;
+              case "exp":
+                return <Exp />;
+              case "projects":
+                return <Projects />;
+              case "why":
+                return <Why />;
+              default:
+                return null;
+            }
+          })()}
 
           <div className="vertical-separator" />
 
